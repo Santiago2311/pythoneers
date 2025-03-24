@@ -93,8 +93,21 @@ label {
     color: white;
     margin-top: 15px;
     transition: color 0.3s ease;
-<<<<<<< HEAD
 }
-=======
+
+#iniciar-sesion {
+    background: none;
+    border: none;
+    color: rgb(252, 194, 6); 
+    padding: 0; 
+    cursor: pointer; 
+    font-size: inherit; 
+    font-family: inherit; 
 }
->>>>>>> 9dc7fbad219961389272f30927961a8dcd307d2e
+
+#iniciar-sesion:hover {
+    background-color: #01579b;
+    color: white;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
