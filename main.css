@@ -97,9 +97,10 @@ label {
 
 #iniciar-sesion {
     background: none;
+    padding: 12px 0;
+    width: 100%;
     border: none;
     color: rgb(252, 194, 6); 
-    padding: 0; 
     cursor: pointer; 
     font-size: inherit; 
     font-family: inherit; 
