@@ -1,7 +1,7 @@
 body{
     background-color: rgb(6, 24, 38);
     color: white;
-    font-family: 'Farsan', cursive;
+    font-family: 'Farsan';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,4 +93,14 @@ label {
     color: white;
     margin-top: 15px;
     transition: color 0.3s ease;
+}
+
+a{
+    color:#75c3ff;
+    transition: color 0.4s ease;
+
+}
+
+a:hover{
+    color:aqua;
 }
