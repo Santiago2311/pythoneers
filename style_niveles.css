@@ -1,0 +1,194 @@
+.dynapuff {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+}
+
+body {
+    font-family: "DynaPuff", system-ui, sans-serif;
+    background-color: rgb(6, 24, 38);
+    color: white;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    /* display: inline-block;  */
+    margin: 10px;
+}
+
+li#chambeando {
+    position: fixed;
+    top: 10px;
+}
+
+li#ranking {
+    position: fixed;
+    top: 70px;
+}
+
+li#logros {
+    position: fixed;
+    top: 140px;
+}
+
+li#tienda {
+    position: fixed;
+    top: 210px;
+}
+
+li#perfil {
+    position: fixed;
+    top: 2800px;
+}
+
+#menu ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+h2 {
+    position: fixed;
+    bottom: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    position: relative;
+}
+
+#info {
+    /* background-color: red;
+    color: aqua; */
+    /* position: relative; */
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    right: 15px;
+}
+
+#info ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+#info ul li{
+    margin: 0px;
+}
+
+#info ul img{
+    margin-left: 15px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+button {
+    background: none;
+    border: none;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+}
+
+.nivel {
+    display: none;
+    text-align: center;
+}
+
+button:hover .nivel {
+    display: inline;
+    color: white;
+}
+
+#niveles {
+    display: grid;
+    grid-template-rows: repeat(1fr, 9);
+    grid-template-columns: repeat(1fr, 7);
+    /* gap: 5px; */
+}
+
+#cabeza_serpiente {
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#nivel_1 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#nivel_2 {
+    grid-column: 4;
+    grid-row: 3;
+}
+
+#nivel_3 {
+    grid-column: 5;
+    grid-row: 4;
+}
+
+#nivel_4 {
+    grid-column: 6;
+    grid-row: 5;
+}
+
+#nivel_5 {
+    grid-column: 5;
+    grid-row: 6;
+}
+
+#nivel_6 {
+    grid-column: 4;
+    grid-row: 7;
+}
+
+#nivel_7 {
+    grid-column: 3;
+    grid-row: 8;
+}
+
+#nivel_8 {
+    grid-column: 2;
+    grid-row: 9;
+}
+
+.manzana {
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+}

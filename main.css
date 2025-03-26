@@ -1,7 +1,7 @@
 body{
     background-color: rgb(6, 24, 38);
     color: white;
-    font-family: 'Farsan', cursive;
+    font-family: 'Farsan';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,12 +103,9 @@ label {
     color: rgb(252, 194, 6); 
     cursor: pointer; 
     font-size: inherit; 
-    font-family: inherit; 
+    font-family: inherit;
 }
 
-#iniciar-sesion:hover {
-    background-color: #01579b;
-    color: white;
-    margin-top: 15px;
-    transition: color 0.3s ease;
+a:hover{
+    color:aqua;
 }
