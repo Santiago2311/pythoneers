@@ -1,0 +1,72 @@
+h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.option-container {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.option-label {
+    font-size: 22px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.option-box {
+    background-color: beige;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+.option-box:hover {
+    background-color: rgb(252, 194, 6);
+    color: white;
+    transform: scale(1.05);
+}
+
+form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+    align-self: flex-start;
+}
+
+.input {
+    background-color: beige;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    box-shadow: inset 4px 4px 4px rgba(0,0,0.5,0.2);
+}
+
+.input::placeholder {
+    color: gray;
+}
+
+a{
+    color:#75c3ff;
+    transition: color 0.4s ease;
+}
+
+a:hover{
+    color:aqua;
+}
