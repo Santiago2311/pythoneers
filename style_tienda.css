@@ -1,0 +1,171 @@
+
+body {
+    font-size: 22px;
+    font-family: "DynaPuff", system-ui, sans-serif;
+    background-color: rgb(6, 24, 38);
+    color: white;
+}
+
+.img-closed {
+    width: 80%; 
+    display: block;
+    margin: 20px auto; 
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+    table-layout: fixed;
+}
+
+/* Primera columna (imágenes de productos) */
+table td:nth-child(1) {
+    width: 20%; /* Ajusta según sea necesario */
+}
+
+/* Segunda columna (descripción) */
+table td:nth-child(2) {
+    width: 50%; /* Se redujo para dar más espacio al precio */
+}
+
+/* Estilo de la columna de precios */
+table td:nth-child(3) {
+    width: 30%; /* Espacio suficiente */
+    text-align: right; /* Alineación derecha */
+    font-size: 25px; /* Tamaño del precio */
+    font-weight: bold;
+    color: #FFD700; /* Color dorado */
+    white-space: nowrap; /* Evita saltos de línea */
+    vertical-align: middle; /* Centra el contenido verticalmente */
+}
+
+/* Contenedor del precio con el icono */
+.precio {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    gap: 5px;
+    height: 100%; /* Asegura que ocupe toda la celda */
+}
+
+/* Tamaño del icono de moneda */
+.precio img {
+    width: 20px;
+    height: 20px;
+}
+
+.producto {
+    width: 60%; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+td strong {
+    font-size: 25px;
+    margin-bottom: 15px; 
+}
+
+td span {
+    font-size: 19px;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+h2 {
+    position: fixed;
+    bottom: 0;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin: 10px;
+}
+
+li#chambeando {
+    position: fixed;
+    top: 10px;
+}
+
+li#ranking {
+    position: fixed;
+    top: 70px;
+}
+
+li#logros {
+    position: fixed;
+    top: 140px;
+}
+
+li#tienda {
+    position: fixed;
+    top: 210px;
+}
+
+li#perfil {
+    position: fixed;
+    top: 2800px;
+}
+
+#menu ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+#info {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    right: 15px;
+}
+
+#info ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+#info ul li {
+    margin: 0px;
+}
+
+#info ul img {
+    margin-left: 15px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    position: relative;
+}
