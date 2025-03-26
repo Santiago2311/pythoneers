@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(6, 24, 38);
+    font-family: "DynaPuff", system-ui, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#contenedor {
+    width: 80%;
+    padding: 20px;
+    position: relative;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#cerrar {
+    color: rgb(240, 24, 5);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#barra-progreso {
+    background: white;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progreso {
+    background: rgb(186, 131, 222);
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#estado {
+    color: white;
+    display: flex;
+    gap: 10px;
+    font-size: 23px;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#serpiente {
+    width: 20%;
+    margin-right: 20px;
+}
+
+#pregunta {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    flex-grow: 1;
+    font-size: 35px;
+}
+
+#opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#icono {
+    height: 25px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+li {
+    margin-right: 20px;
+}
+
+.option {
+    background: rgb(252, 198, 6);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.option:hover {
+    background: rgb(6, 161, 239);
+}
