@@ -1,0 +1,263 @@
+.dynapuff {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+}
+
+body {
+    font-family: "DynaPuff", system-ui, sans-serif;
+    background-color: rgb(6, 24, 38);
+    color: white;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    /* display: inline-block;  */
+    margin: 10px;
+}
+
+li#chambeando {
+    position: fixed;
+    top: 10px;
+}
+
+li#ranking {
+    position: fixed;
+    top: 70px;
+}
+
+li#logros {
+    position: fixed;
+    top: 140px;
+}
+
+li#tienda {
+    position: fixed;
+    top: 210px;
+}
+
+li#perfil {
+    position: fixed;
+    top: 2800px;
+}
+
+#menu ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+h2 {
+    position: fixed;
+    bottom: 0;
+}
+
+#perfil-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    position: relative;
+}
+
+#info {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    right: 15px;
+}
+
+#info ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+#info ul li{
+    margin: 0px;
+}
+
+#info ul img{
+    margin-left: 15px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+#barra-progreso {
+    background: white;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#progreso {
+    background: rgb(186, 131, 222);
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+body {
+    font-family: "DynaPuff", system-ui, sans-serif;
+    background-color: rgb(6, 24, 38);
+    color: white;
+}
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin: 10px;
+}
+
+#menu ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+h2 {
+    position: fixed;
+    bottom: 0;
+}
+
+#info {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    right: 15px;
+}
+
+#info ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+#info ul li {
+    margin: 0px;
+}
+
+#info ul img {
+    margin-left: 15px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+#barra-progreso {
+    background: white;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#foto-perfil {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.escudo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* #logro {
+    margin-top: 400px;
+    margin-bottom: 0px;
+    padding: 0px;
+} */
+
+#titulo {
+    margin-top: 300px;
+    margin-bottom: 10px;
+}
+
+/* table {
+    margin-top: 400px;
+} */
+
+/* #perfil-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#perfil-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.tabla-escudos {
+    width: 100%; 
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.tabla-escudos td {
+    padding: 10px;
+    text-align: center;
+}
+
+.escudo {
+    width: 80px;  
+    height: auto;
+    display: block;
+    margin: 0 auto;
+} */

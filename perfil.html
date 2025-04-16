@@ -1,15 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_perfil.css">
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
-    <link href="main.css" rel="stylesheet" type="text/css">
     <title>Perfil</title>
 </head>
 <body>
-    <div>
+    <div id="contenedor"> 
+        <div id="menu"> 
+            <ul>
+                <li id="chambeando"> <img class="icono" src="assets/chambeando.png"> Chambeando</li>
+                <li id="ranking"> <img class="icono" src="assets/ranking.png"> Ranking</li>
+                <li id="logros"> <img class="icono" src="assets/logros.png"> Logros</li>
+                <li id="tienda"> <img class="icono" src="assets/tienda.png"> Tienda</li>
+                <li id="perfil"> <img class="icono" src="assets/perfil.png"> Perfil</li>
+            </ul>
+            <h2>Pythoneers</h2>
+        </div>
         
+        <div id="main"> 
+            <div id="info">
+                <ul>
+                    <li> <img class="icono" id="vidas" src="assets/vidas.png"> </li>
+                    <li id='vidas'>5</li>
+                    <li> <img class="icono" id="racha" src="assets/racha.png"> </li>
+                    <li id ='racha'>10</li>
+                    <li> <img class="icono" id="posicion" src="assets/posicion.png"> </li>
+                    <li id ='posicion'>1</li>
+                    <li> <img class="icono" id="monedas" src="assets/monedas.png"> </li>
+                    <li id ='monedas'>100</li>
+                    <li> <img class="icono" id="gemas" src="assets/gemas.png"> </li>
+                    <li id ='puntaje'>100</li>
+                </ul>
+            </div>
+            <div id="perfil-container">
+                <img id="foto-perfil" src="https://thumbs.dreamstime.com/b/fuera-de-servicio-senal-se%C3%B1al-signo-con-tri%C3%A1ngulo-amarillo-y-exclamaci%C3%B3n-banner-215800294.jpg">
+                <div id="perfil-info">
+                    <h1>Juan Pedro McLovin Smith</h1><br>              
+                    <h3>A42090210</h3><br>
+                    <h1>Progreso (70%)</h1>
+                    <div id="barra-progreso">
+                        <div id="progreso"></div>
+                    </div>
+                </div>
+            </div> 
+            <h1 id="titulo">Logros</h1> 
+            <table class="tabla-escudos">
+                <tr>
+                    <td><img src="assets/escudo.png" class="escudo"></td>
+                    <td><img src="assets/escudo.png" class="escudo"></td>
+                    <td><img src="assets/escudo.png" class="escudo"></td>
+                    <td><img src="assets/escudo.png" class="escudo"></td>
+                    <td><img src="assets/escudo.png" class="escudo"></td>
+                    <td><img src="assets/escudo.png" class="escudo"></td>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>

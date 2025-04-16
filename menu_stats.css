@@ -1,0 +1,48 @@
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    /* display: inline-block;  */
+    margin: 10px;
+}
+
+li#chambeando {
+    position: fixed;
+    top: 10px;
+}
+
+li#ranking {
+    position: fixed;
+    top: 70px;
+}
+
+li#logros {
+    position: fixed;
+    top: 140px;
+}
+
+li#tienda {
+    position: fixed;
+    top: 210px;
+}
+
+li#perfil {
+    position: fixed;
+    top: 2800px;
+}
+
+#menu ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
