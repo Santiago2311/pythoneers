@@ -1,3 +1,21 @@
+.sono-simple {
+    font-family: "Sono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+    font-variation-settings:
+        "MONO" 1;
+}
+
+.dynapuff {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+}
+
 body{
     background-color: rgb(6, 24, 38);
     color: white;
@@ -5,43 +23,44 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     min-height: 100vh;
     margin: 0;
     padding: 20px;
 }
 
-.submit-btn {
-    margin-top: 15px;
-    padding: 12px 0;
-    width: 100%;
-    background-color: rgb(252, 194, 6);
-    color: black;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
 }
 
-.submit-btn:hover {
-    background-color: #01579b;
+button {
     color: white;
-    margin-top: 15px;
-    transition: color 0.3s ease;
-}
-
-#iniciar-sesion {
-    background: none;
-    padding: 12px 0;
+    background-color: rgb(252, 194, 6);
+    border-color: rgba(222, 149, 2, 0.791);
     width: 100%;
-    border: none;
-    color: rgb(252, 194, 6); 
-    cursor: pointer; 
-    font-size: inherit; 
-    font-family: inherit;
+    font-family: "DynaPuff", system-ui;
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
 }
 
-a:hover{
-    color:aqua;
+button:hover {
+    background-color: #01579b;
+    border-color: #01589ba1;;
+    color: white;
+    transition: 0.3s ease;
+}
+
+input {
+    background-color: beige;
+    font-family: "Sono", monospace;
+    padding: 12px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    box-shadow: inset 4px 4px 4px rgba(0,0,0.5,0.2);
+    margin-bottom: 1rem;
 }
