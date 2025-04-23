@@ -12,15 +12,21 @@
     <h1>¿Quién eres?</h1>
     <form>
         <label for='nombre'>Nombre</label>
-        <input type="string" placeholder="Introduce tu nombre">
+        <input type="string" id="usuario" placeholder="Introduce tu nombre">
+        <p class="alerta oculto" id="alerta_usuario"> No olvides escribir tu nombre </p>
         <br>
         <label for='correo'>Correo</label>
-        <input type="string" placeholder="Introduce tu correo">
+        <input type="string" id="correo" placeholder="Introduce tu correo">
+        <p class="alerta oculto" id="alerta_correo"> Recuerda escribir tu correo </p>
         <br>
         <label for="password">Contraseña</label>
-        <input type="password" placeholder="Introduce contraseña">
+        <input type="password" id="contraseña" placeholder="Introduce contraseña">
+        <p class="alerta oculto" id="alerta_contraseña_corta"> La contraseña debe tener al menos 8 caracteres.  </p>
+        <p class="alerta oculto" id="alerta_contraseña_larga"> La contraseña debe tener máximo 25 caracteres. </p>
         <br>
-        <button class="submit-btn" type="submit" id="continuar">Continuar</button>
+        <button id="continuar" type="button">Continuar</button>
+        <!-- <a href="meta.html"> <button id="continuar">Continuar</button> </a> -->
     </form>
+    <script src="registro.js"></script>
 </body>
 </html>

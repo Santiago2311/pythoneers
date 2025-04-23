@@ -62,5 +62,17 @@ input {
     font-size: 16px;
     border: none;
     box-shadow: inset 4px 4px 4px rgba(0,0,0.5,0.2);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.alerta {
+    margin: 0px;
+    /* background-color: white; */
+    padding: 5px;
+    border-radius: 5px;
+    color: #FB4737;
+}
+
+.oculto {
+    display: none;
 }
