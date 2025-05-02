@@ -19,11 +19,11 @@ body {
     margin-top: 100px;
 }
 
-#imagen {
-    width: 500px;
-    height: 200px;
-    background-color: blue;
+.portada {
+    width: 1500px;
+    height: 1200px;
 }
+
 
 h1 {
     font-size: 80px;
@@ -36,7 +36,7 @@ h1 {
     gap: 30px;
 }
 
-img {
+.icono {
     width: 50px;
     height: 50px;
 }

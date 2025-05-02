@@ -143,6 +143,9 @@ button:hover .nivel {
     text-align: center;
     display: block;
     color: white;
+    font-family: "DynaPuff", system-ui;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 button:hover .numero {
@@ -211,88 +214,88 @@ button:hover .numero {
 
 #nivel_9 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:36vh;
+    left:22vw;
 } 
 #nivel_10 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:23vh;
+    left:25vw;
 } 
 #nivel_11 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:46vh;
+    left: 28vw;
 } 
 
 #nivel_12 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:33vh;
+    left:32vw;
 } 
 #nivel_13 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:17vh;
+    left:33vw;
 } 
 
 #nivel_14 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:27vh;
+    left: 39vw;
 } 
 
 #nivel_15 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:44vh;
+    left: 37vw;
 } 
 
 #nivel_16 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:38vh;
+    left:44vw;
 } 
 #nivel_17 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:13vh;
+    left: 42vw;
 } 
 #nivel_18 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:16vh;
+    left:50vw;
 } 
 #nivel_19 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:29vh;
+    left:50vw;
 } 
 #nivel_20 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:60vh;
+    left:50vw;
 } 
 
 #nivel_21 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:55vh;
+    left:62vw;
 } 
 #nivel_22 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:73vh;
+    left:55vw;
 } 
 #nivel_23 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:86vh;
+    left:50vw;
 } 
 #nivel_24 {
     position: absolute;
-    top:120vh;
-    left: 5vw;
+    top:90vh;
+    left:60vw;
 } 
 
 .manzana {
