@@ -1,0 +1,99 @@
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+body {
+    font-family: "DynaPuff", system-ui, sans-serif;
+    background-color: rgb(6, 24, 38);
+    color: white;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin: 10px;
+}
+
+li#chambeando {
+    position: fixed;
+    top: 10px;
+}
+
+li#ranking {
+    position: fixed;
+    top: 70px;
+}
+
+li#logros {
+    position: fixed;
+    top: 140px;
+}
+
+li#tienda {
+    position: fixed;
+    top: 210px;
+}
+
+li#perfil {
+    position: fixed;
+    top: 280px;
+}
+
+#menu ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+h2 {
+    position: fixed;
+    bottom: 0;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    position: relative;
+}
+
+#info {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    right: 15px;
+}
+
+#info ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+#info ul li{
+    margin: 0px;
+}
+
+#info ul img{
+    margin-left: 15px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}

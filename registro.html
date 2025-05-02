@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=Sono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet" type="text/css">
     <link href="login_registro.css" rel="stylesheet" type="text/css">
     <title>Registro</title>
 </head>
 <body>
     <h1>¿Quién eres?</h1>
-    <form>
-        <label for='nombre'>Nombre</label>
-        <input type="string" id="usuario" placeholder="Introduce tu nombre">
-        <p class="alerta oculto" id="alerta_usuario"> No olvides escribir tu nombre </p>
+    <form action="registro.php" method="POST">
+        <label for="nombre">Nombre</label>
         <br>
-        <label for='correo'>Correo</label>
-        <input type="string" id="correo" placeholder="Introduce tu correo">
-        <p class="alerta oculto" id="alerta_correo"> Recuerda escribir tu correo </p>
+        <input class="input" type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+        <br>
+        <label for="apellidos">Apellidos</label>
+        <br>
+        <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+        <br>
+        <label for="correo">Correo</label>
+        <br>
+        <input class="input" type="email" id="correo" name="correo" placeholder="Introduce tu correo" required>
         <br>
         <label for="password">Contraseña</label>
-        <input type="password" id="contraseña" placeholder="Introduce contraseña">
-        <p class="alerta oculto" id="alerta_contraseña_corta"> La contraseña debe tener al menos 8 caracteres.  </p>
-        <p class="alerta oculto" id="alerta_contraseña_larga"> La contraseña debe tener máximo 25 caracteres. </p>
         <br>
-        <button id="continuar" type="button">Continuar</button>
-        <!-- <a href="meta.html"> <button id="continuar">Continuar</button> </a> -->
+        <input class="input" type="password" id="password" name="password" placeholder="Introduce contraseña" required>
+        <br>
+        <button class="submit-btn" type="submit" id="continuar">Continuar</button>
     </form>
-    <script src="registro.js"></script>
 </body>
 </html>
