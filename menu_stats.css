@@ -1,4 +1,4 @@
-#contenedor {
+/* #contenedor {
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 1fr;
@@ -13,7 +13,7 @@
 }
 
 #menu li {
-    /* display: inline-block;  */
+    display: inline-block;
     margin: 10px;
 }
 
@@ -45,4 +45,104 @@ li#perfil {
 #menu ul li img {
     vertical-align: middle;
     margin-right: 8px;
+} */
+
+#contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+#nombre_juego {
+    position: fixed;
+    bottom: 0;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    margin: 10px;
+}
+
+li#chambeando {
+    position: fixed;
+    top: 10px;
+}
+
+li#ranking {
+    position: fixed;
+    top: 70px;
+}
+
+li#logros {
+    position: fixed;
+    top: 140px;
+}
+
+li#tienda {
+    position: fixed;
+    top: 210px;
+}
+
+li#perfil {
+    position: fixed;
+    top: 2800px;
+}
+
+#menu ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+#info {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 10;
+    right: 15px;
+}
+
+#info ul {
+    display: flex;
+    gap: 5px;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+}
+
+#info ul li {
+    margin: 0px;
+}
+
+#info ul img {
+    margin-left: 15px;
+}
+
+.icono {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    position: relative;
+}
+
+button.comprar, button.usar{
+    font-size: 20px;
+    width: 80%;
 }

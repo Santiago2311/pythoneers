@@ -9,8 +9,8 @@ body {
 }
 
 #contenedor {
-    width: 80%;
-    padding: 20px;
+    width: 85%;
+    /* padding: 10px; */
     position: relative;
 }
 
@@ -23,7 +23,7 @@ body {
 
 #cerrar {
     color: rgb(240, 24, 5);
-    font-size: 24px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -78,7 +78,9 @@ body {
 }
 
 #icono {
-    height: 25px;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 15px;
 }
 
 ul {
@@ -89,7 +91,8 @@ ul {
 }
 
 li {
-    margin-right: 20px;
+    margin-right: 0px;
+    font-size: 25px;
 }
 
 .option {

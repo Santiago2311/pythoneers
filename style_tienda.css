@@ -25,32 +25,40 @@ table {
     width: 100%;
     border-collapse: separate;
     border-spacing: 20px;
-    table-layout: fixed;
+    /* table-layout: fixed; */
 }
 table td:nth-child(1) {
-    width: 20%; 
+    width: 30%; 
 }
 
 table td:nth-child(2) {
-    width: 65%;
+    width: 55%;
 }
 
 table td:nth-child(3) {
-    width: 30%; 
-    text-align: right; 
+    /* width: 15%;  */
     font-size: 25px; 
     font-weight: bold;
     color: #FFD700; 
     white-space: nowrap;
-    vertical-align: middle; 
+}
+
+.accion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
 .precio {
     display: flex;
     align-items: center; 
-    justify-content: flex-end; 
     gap: 5px;
     height: 100%; 
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .precio img {
@@ -78,7 +86,7 @@ td span {
     font-size: 19px;
 }
 
-#contenedor {
+/* #contenedor {
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 1fr;
@@ -86,7 +94,7 @@ td span {
     padding: 10px;
 }
 
-h2 {
+#nombre_juego {
     position: fixed;
     bottom: 0;
 }
@@ -171,4 +179,15 @@ li#perfil {
     grid-template-rows: 50px 1fr;
     gap: 10px;
     position: relative;
+}*/
+
+button.comprar, button.usar{
+    font-size: 20px;
+    width: 80%;
+}
+
+.usar {
+    background-color: rgb(186, 131, 222);
+    border-color:rgb(158, 88, 205);
+
 }

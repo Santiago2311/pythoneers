@@ -14,20 +14,27 @@
         <label for="nombre">Nombre</label>
         <br>
         <input class="input" type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+        <p class="alerta oculto" id="alerta_nombre"> No olvides escribir tu nombre </p>
         <br>
         <label for="apellidos">Apellidos</label>
         <br>
         <input class="input" type="text" id="apellidos" name="apellidos" placeholder="Introduce tus apellidos" required>
+        <p class="alerta oculto" id="alerta_apellido"> No olvides escribir tu apellido </p>
         <br>
         <label for="correo">Correo</label>
         <br>
         <input class="input" type="email" id="correo" name="correo" placeholder="Introduce tu correo" required>
+        <p class="alerta oculto" id="alerta_correo"> No olvides escribir tu correo </p>
         <br>
         <label for="password">Contraseña</label>
         <br>
         <input class="input" type="password" id="password" name="password" placeholder="Introduce contraseña" required>
+        <p class="alerta oculto" id="alerta_contra_larga"> La contraseña debe tener al menos 8 carácteres. </p>
+        <p class="alerta oculto" id="alerta_contra_corta"> La contraseña debe tener máximo 25 carácteres. </p>
+        <p class="alerta oculto" id="alerta_contra_nums"> La contraseña debe tener al menos un número. </p>
         <br>
         <button class="submit-btn" type="submit" id="continuar">Continuar</button>
     </form>
+    <script src="registro.js"> </script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="stylesheet" href="menu_stats.css">
     <link rel="stylesheet" href="style_tienda.css">
+    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     <title>Tienda</title>
 </head>
@@ -15,7 +17,7 @@
                 <li id="tienda"> <img class="icono" src="assets/tienda.png"> Tienda</li>
                 <li id="perfil"> <img class="icono" src="assets/perfil.png"> Perfil</li>
             </ul>
-            <h2>Pythoneers</h2>
+            <h2 id="nombre_juego">Pythoneers</h2>
         </div>
         <div id="main"> 
             <div id="info">
@@ -48,7 +50,12 @@
                             <br><br>
                             <span>Para eventos con temática cowboy, va con tu outfit o simplemente eres del norte. Adquiere </span>
                         </td>
-                        <td class="precio">2350 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-fiesta.png" class="producto"></td>
@@ -57,7 +64,12 @@
                             <br><br>
                             <span>¿Cumpleaños tuyo o de alguien más? No llegues como si fuera un día cualquiera. </span>
                         </td>
-                        <td class="precio">1999 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 1999 <img src="assets/monedas.png"> </span>
+                                <button class="usar"> Usar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-mexicano.png" class="producto"></td>
@@ -66,7 +78,12 @@
                             <br><br>
                             <span>16 de septiembre, 20 de noviembre, cuando juega la selección, la disque fiesta casera de esas fechas. Algo que vestir cuando se trata de México.</span>
                         </td>
-                        <td class="precio">2167 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombreros.png" class="producto"></td>
@@ -75,7 +92,12 @@
                             <br><br>
                             <span>¿Inusual? ¿Quién usaría eso? Respetables guerreros dieron su vida con algo así en la cabeza. Hecho con plumas de un Quetzalcóatl virtual. </span>
                         </td>
-                        <td class="precio">2900 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-militar.png" class="producto"></td>
@@ -84,7 +106,12 @@
                             <br><br>
                             <span>¿Esto se complicó? Prepárate para la guerra. Si ya estas batallando con lo que hay aquí pues ponte algo ad hoc. </span>
                         </td>
-                        <td class="precio">1111 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-de-santa.png" class="producto"></td>
@@ -94,7 +121,12 @@
                             <span>Todo el año estas esperando a que sea diciembre, huele a comida de esa que va en el horno y no ir a la escuela. Que se sienta la navidad.</span>
                             <br><span> (Había subido el precio porque es época de dinero, pero volvió a bajar porque también es época de promos) </span>
                         </td>
-                        <td class="precio">1680 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-de-pamela.png" class="producto"></td>
@@ -103,7 +135,12 @@
                             <br><br>
                             <span>El título lo dice todo, no sé qué más quieres que describa. Tú sabes que si es de alguien que maneja una Range Rover para ir por Santi y Ana Pau. </span>
                         </td>
-                        <td class="precio">2499 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-de-graduacion.png" class="producto"></td>
@@ -111,7 +148,12 @@
                             <strong>Birrete</strong>
                             <br><br>
                             <span>Es lo que te pones en la cabeza cuando te gradúas, por si lo sientes muy lejos o imposible, manifiéstalo.
-                        <td class="precio">900 <img src="assets/monedas.png"></td>
+                                <td>
+                                    <div class="accion"> 
+                                        <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                        <button class="comprar"> Comprar </button>
+                                    </div>
+                                </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-de-copa.png" class="producto"></td>
@@ -120,7 +162,12 @@
                             <br><br>
                             <span>Quizás te da poderes para entender los temas, idk, mejor no te quedes con la duda.  </span>
                         </td>
-                        <td class="precio">599 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-de-cocinero (1).png" class="producto"></td>
@@ -129,7 +176,12 @@
                             <br><br>
                             <span>¿Estas cookeando las respuestas? Muestra lo chef que eres con este gorro. Con tecnología especial para que nunca se manche el blanco.</span>
                         </td>
-                        <td class="precio">1386 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/sombrero-de-bruja.png" class="producto"></td>
@@ -138,7 +190,12 @@
                             <br><br>
                             <span>Para las fiestas de disfraces, en época donde se supone las hojas caen, pero lo único que cae es tu economía por tanto plan.  </span>
                         </td>
-                        <td class="precio">1879 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/casco-de-seguridad.png" class="producto"></td>
@@ -147,7 +204,12 @@
                             <br><br>
                             <span>Por si ya así de plano la vida te está agarrando a golpes de los feos, este casco resiste hasta un ladrillazo caído del piso 5.</span>
                         </td>
-                        <td class="precio">345 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/reno.png" class="producto"></td>
@@ -156,7 +218,12 @@
                             <br><br>
                             <span>Algo navideño, pero más chill. Mejor estos a los de tu ex, ahh no te creas...pero pues si o no? </span>
                         </td>
-                        <td class="precio">892 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
 
                     <tr>
@@ -169,7 +236,12 @@
                             <br><br>
                             <span>Para estar modo playa, tan playa que se refleja en las micas.</span>
                         </td>
-                        <td class="precio">943 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/gafas-de-sol (3).png" class="producto"></td>
@@ -178,7 +250,12 @@
                             <br><br>
                             <span>Algo intelectual, pero bien. Lentes no de sol pero cool. </span>
                         </td>
-                        <td class="precio">1886 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/gafas-de-sol (2).png" class="producto"></td>
@@ -188,7 +265,12 @@
                             <span>Lo más intelectual de la tienda. No para todos, pero el que es guapo es guapo.</span><br>
                             <span> El establecimiento no se hace responsable si pareces Harry Potter. </span>
                         </td>
-                        <td class="precio">1205 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/lente (1).png" class="producto"></td>
@@ -197,7 +279,12 @@
                             <br><br>
                             <span>Para darle color a tu outfit y resaltar si no quieres complicarte con lo demás. </span>
                         </td>
-                        <td class="precio">1001 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/lentes (3).png" class="producto"></td>
@@ -206,7 +293,12 @@
                             <br><br>
                             <span>Para tipo un concierto o año nuevo, lentes no del diario.  </span>
                         </td>
-                        <td class="precio">465 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/lentes (2).png" class="producto"></td>
@@ -216,7 +308,12 @@
                             <span>Tipo las que se usan para esquiar, hacer paracaidismo, cuando vas en moto, en racer, etc.</span><br>
                             <span>Protección contra viento, polvo, lodo, nieve o rayos UV en cualquier actividad al aire libre.</span>
                         </td>
-                        <td class="precio">1250 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
 
                     <tr>
@@ -229,7 +326,12 @@
                             <br><br>
                             <span>CorbataTec </span>
                         </td>
-                        <td class="precio">689 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/corbata.png" class="producto"></td>
@@ -238,7 +340,12 @@
                             <br><br>
                             <span>Formal con contraste de colores para que tampoco sea tan tieso.  </span>
                         </td>
-                        <td class="precio">378 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>                    
                     <tr>
                         <td><img src="assets/corbata-de-mono.png" class="producto"></td>
@@ -247,7 +354,12 @@
                             <br><br>
                             <span>Corbatín nice, difícil de combinar pero también de olvidar </span>
                         </td>
-                        <td class="precio">271 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/corbata-de-mono (1).png" class="producto"></td>
@@ -256,7 +368,12 @@
                             <br><br>
                             <span>Moño rosado para el cuello, girly a tu manera. </span>
                         </td>
-                        <td class="precio">364 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>                    
                     <tr>
                         <td><img src="assets/collar.png" class="producto"></td>
@@ -265,7 +382,12 @@
                             <br><br>
                             <span>Dorado con 3 colgantes, para ocasiones especiales. </span>
                         </td>
-                        <td class="precio">3230 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/collar (5).png" class="producto"></td>
@@ -274,7 +396,12 @@
                             <br><br>
                             <span> Piedras preciosas apreciada desde la antigüedad, se dice ayuda a la meditación y a equilibrar las emociones. Por si andas con las emociones cero equilibradas. </span>
                         </td>
-                        <td class="precio">2651 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/collar (4).png" class="producto"></td>
@@ -283,7 +410,12 @@
                             <br><br>
                             <span> De buen gusto, para que se vea la diferencia. </span>
                         </td>
-                        <td class="precio">3627 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/collar (3).png" class="producto"></td>
@@ -292,7 +424,12 @@
                             <br><br>
                             <span> La verdad que yo usaría esto, no sé cómo explicarlo pero es algo bien pues. </span>
                         </td>
-                        <td class="precio">3627 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/bufanda-de-invierno.png" class="producto"></td>
@@ -301,7 +438,12 @@
                             <br><br>
                             <span> Frío pero moderado. </span>
                         </td>
-                        <td class="precio">257 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/bufanda.png" class="producto"></td>
@@ -310,7 +452,12 @@
                             <br><br>
                             <span> Mucho fróo, así de que ya hasta le tuviste que dar 2 vueltas a la cosa esa. </span>
                         </td>
-                        <td class="precio">279 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/bufanda (1).png" class="producto"></td>
@@ -319,7 +466,12 @@
                             <br><br>
                             <span> Para situaciones como la anterior, pero en color rosa. </span>
                         </td>
-                        <td class="precio">279 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
 
                     <tr>
@@ -332,7 +484,12 @@
                             <br><br>
                             <span> Con detalles en dorado. Cabría el celular, maquillaje, carjetero y llaves.  </span>
                         </td>
-                        <td class="precio">567 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/bolso-de-mano.png" class="producto"></td>
@@ -341,7 +498,12 @@
                             <br><br>
                             <span> Descripción similar a la anterior, pero este para ocasiones un poco más formales. </span>
                         </td>
-                        <td class="precio">659 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>                
                     <tr>
                         <td><img src="assets/bolso (1).png" class="producto"></td>
@@ -350,7 +512,12 @@
                             <br><br>
                             <span> Se ve paqueña pero si le caben cosas.</span>
                         </td>
-                        <td class="precio">512 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/bolso (2).png" class="producto"></td>
@@ -359,7 +526,12 @@
                             <br><br>
                             <span> Ya algo serio y caben muchas más cosas. Incluso para la escuela sirve, aunque tu lap sea de las grandes.</span>
                         </td>
-                        <td class="precio">699 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td><img src="assets/cartera.png" class="producto"></td>
@@ -368,7 +540,12 @@
                             <br><br>
                             <span> Igual ya tamaño grande para meter media vida tipo Jane Birkin</span>
                         </td>
-                        <td class="precio">699 <img src="assets/monedas.png"></td>
+                        <td>
+                            <div class="accion"> 
+                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
+                                <button class="comprar"> Comprar </button>
+                            </div>
+                        </td>
                     </tr>
                 </table>
 

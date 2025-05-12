@@ -19,15 +19,14 @@ body {
     margin-top: 100px;
 }
 
-.portada {
-    width: 1500px;
-    height: 1200px;
+#portada {
+    width: 400px;
 }
 
 
 h1 {
     font-size: 80px;
-    margin: 50px;
+    /* margin: 50px; */
     margin-bottom: 20px;
 }
 
@@ -86,13 +85,13 @@ button {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    font-family: "DynaPuff", system-ui;
+    /* font-family: "DynaPuff", system-ui;
     background-color: rgb(252, 198, 6);
     padding: 5px;
     font-size: 20px;
     border-color: rgb(242, 190, 2);
     border-radius: 5px;
-    box-shadow: 100px;
+    box-shadow: 100px; */
 }
 
 button:hover {

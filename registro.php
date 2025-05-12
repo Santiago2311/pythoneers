@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Ejecutar la consulta
         if ($stmt->execute()) {
-            header("Location: registro.html");
+            header("Location: meta.html");
         } else {
             echo "<h1>Error al registrar</h1>";
             echo "<p>No se pudo completar el registro: " . $stmt->error . "</p>";

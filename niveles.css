@@ -12,10 +12,11 @@ body {
     background-color: rgb(6, 24, 38);
     color: white;
     padding-top: 0px;
-    margin: 0px;
+    /* margin: 0px; */
+    font-size: 22px;
 }
 
-#contenedor {
+/* #contenedor {
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-template-rows: 1fr;
@@ -30,7 +31,7 @@ body {
 }
 
 #menu li {
-    /* display: inline-block;  */
+    display: inline-block;
     margin: 10px;
 }
 
@@ -111,7 +112,7 @@ h2 {
     width: 30px;
     height: 30px;
     margin: 0px;
-}
+} */
 
 button {
     background: none;
@@ -166,7 +167,7 @@ button:hover .numero {
 
 #nivel_1 {
     position: absolute;
-    top: 75vh;
+    top:77vh;
     left: 15vw;
 }
 
@@ -184,117 +185,117 @@ button:hover .numero {
 
 #nivel_4 {
     position: absolute;
-    top: 52vh;
-    left: 5vw;
+    top: 50vh;
+    left: 7vw;
 }
 
 #nivel_5 {
     position: absolute;
-    top: 48vh;
-    left: 17vw;
+    top:37vh;
+    left:3vw;
 }
 
 #nivel_6 {
     position: absolute;
-    top: 40vh;
-    left: 10vw;
+    top:48vh;
+    left:18vw;
 }
 
 #nivel_7 {
     position: absolute;
-    top: 35vh;
-    left: 3vw;
+    top:30vh;
+    left:14vw;
 }
 
 #nivel_8 {
     position: absolute;
-    top: 28vh;
-    left: 15vw;
+    top:35vh;
+    left:23vw;
 } 
 
 #nivel_9 {
     position: absolute;
-    top:36vh;
-    left:22vw;
+    top:18vh;
+    left:26vw;
 } 
 #nivel_10 {
     position: absolute;
-    top:23vh;
-    left:25vw;
+    top:45vh;
+    left:30vw;
 } 
 #nivel_11 {
     position: absolute;
-    top:46vh;
-    left: 28vw;
+    top:31vh;
+    left:34vw;
 } 
 
 #nivel_12 {
     position: absolute;
-    top:33vh;
-    left:32vw;
+    top:16vh;
+    left:38vw;
 } 
 #nivel_13 {
     position: absolute;
-    top:17vh;
-    left:33vw;
+    top:12vh;
+    left:48vw;
 } 
 
 #nivel_14 {
     position: absolute;
-    top:27vh;
-    left: 39vw;
+    top:31vh;
+    left:44vw;
 } 
 
 #nivel_15 {
     position: absolute;
-    top:44vh;
-    left: 37vw;
+    top:47vh;
+    left:40vw;
 } 
 
 #nivel_16 {
     position: absolute;
-    top:38vh;
-    left:44vw;
+    top:33vh;
+    left:53vw;
 } 
 #nivel_17 {
     position: absolute;
-    top:13vh;
-    left: 42vw;
+    top:40vh;
+    left:64vw;
 } 
 #nivel_18 {
     position: absolute;
-    top:16vh;
-    left:50vw;
+    top:50vh;
+    left:55vw;
 } 
 #nivel_19 {
     position: absolute;
-    top:29vh;
-    left:50vw;
+    top:58vh;
+    left:48vw;
 } 
 #nivel_20 {
     position: absolute;
     top:60vh;
-    left:50vw;
+    left:62vw;
 } 
 
 #nivel_21 {
     position: absolute;
-    top:55vh;
-    left:62vw;
+    top:74vh;
+    left:69vw;
 } 
 #nivel_22 {
     position: absolute;
     top:73vh;
-    left:55vw;
+    left:56vw;
 } 
 #nivel_23 {
     position: absolute;
-    top:86vh;
+    top:87vh;
     left:50vw;
 } 
 #nivel_24 {
     position: absolute;
-    top:90vh;
+    top:91vh;
     left:60vw;
 } 
 
