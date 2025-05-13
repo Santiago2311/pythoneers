@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = htmlspecialchars($_POST['nombre']);
     $apellidos = htmlspecialchars($_POST['apellidos']);
     $correo = htmlspecialchars($_POST['correo']);
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT); // Usando bcrypt
+    $contrasena = password_hash($_POST['contrasena'], PASSWORD_DEFAULT); // Usando bcrypt
 
     // Configuración de la conexión a la base de datos a través del túnel SSH
     $servidor = "127.0.0.1";
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         $stmt = $conn->prepare("INSERT INTO proyecto_usuario (nombre, apellidos, correo, contrasena) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssss", $nombre, $apellidos, $correo, $contrasena);
+        $stmt->bind_param("ssss", $nombre, $apellidos, $correo, $contrasena, );
 
         // Ejecutar la consulta
         if ($stmt->execute()) {

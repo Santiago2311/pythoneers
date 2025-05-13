@@ -10,12 +10,12 @@
 </head>
 <body>
     <h1>Estas de vuelta</h1>
-    <form>
+    <form action="login.php" method="POST">
         <label for='correo'>Correo</label>
-        <input class='input' type="string" placeholder="Introduce tu correo">
+        <input class='input' type="email" name="correo" placeholder="Introduce tu correo">
         <br>
         <label for="password">Contraseña</label>
-        <input class="input" type="password" placeholder="Introduce contraseña">
+        <input class="input" type="password" name="contrasena" placeholder="Introduce contraseña">
         <br>
         <a id="olvidaste" href="">Olvidaste tu contraseña</a>
         <br>
