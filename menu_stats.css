@@ -80,20 +80,20 @@ li#ranking {
     top: 70px;
 }
 
-li#logros {
-    position: fixed;
-    top: 140px;
-}
-
-li#tienda {
+li#perfil {
     position: fixed;
     top: 210px;
 }
 
-li#perfil {
+li#tienda {
+    position: fixed;
+    top: 140px;
+}
+
+/* li#perfil {
     position: fixed;
     top: 2800px;
-}
+} */
 
 #menu ul li img {
     vertical-align: middle;

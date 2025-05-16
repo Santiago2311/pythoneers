@@ -1,13 +1,13 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = htmlspecialchars($_POST['correo']);
-    $contrasena_form = password_hash($_POST['contrasena'], PASSWORD_DEFAULT);
+    $contrasena_form = $_POST['contrasena'];
 
     $servidor = "127.0.0.1";
     $puerto = 3307;
     $usuario_db = "TC2005B_602_4";
     $password_db = "pAssWd_894700";
-    $nombre_db = "TC2005B_602_4";
+    $nombre_db = "R_602_4";
 
     try {
         $conn = new mysqli($servidor, $usuario_db, $password_db, $nombre_db, $puerto);
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Error de conexión: " . $conn->connect_error);
         }
 
-        $stmt = $conn->prepare("SELECT contrasena FROM proyecto_usuario WHERE correo=?");
+        $stmt = $conn->prepare("SELECT contrasena FROM usuario WHERE correo=?");
         $stmt->bind_param("s", $correo);
         $stmt->execute();
 

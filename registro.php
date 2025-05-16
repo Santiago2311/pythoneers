@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $puerto = 3307;
     $usuario_db = "TC2005B_602_4";
     $password_db = "pAssWd_894700";
-    $nombre_db = "TC2005B_602_4";
+    $nombre_db = "R_602_4";
 
     try {
         // Crear conexión a la base de datos a través del túnel SSH
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             die("Error de conexión: " . $conn->connect_error);
         }
 
-        $stmt = $conn->prepare("INSERT INTO proyecto_usuario (nombre, apellidos, correo, contrasena) VALUES (?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO usuario (nombre, apellidos, correo, contrasena) VALUES (?, ?, ?, ?)");
         $stmt->bind_param("ssss", $nombre, $apellidos, $correo, $contrasena, );
 
         // Ejecutar la consulta
