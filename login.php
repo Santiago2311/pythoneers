@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = htmlspecialchars($_POST['correo']);
     $contrasena_form = $_POST['contrasena'];
@@ -26,6 +28,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->num_rows > 0) {
             if (password_verify($contrasena_form, $contrasena_hash_db)) {
+                $_SESSION['correo'] = $correo;
+
                 header("Location: niveles.html");
             } else {
                 echo "<h1>Contraseña incorrecta</h1>";
@@ -34,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<h1>Usuario incorrecto o inexistente</h1>";
         }
         $stmt->close();
+        $conn->close();
 
     } catch (Exception $e) {
         echo "<h1>Error de sistema</h1>";
