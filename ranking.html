@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="ranking.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="menu_stats.css">
+        <!-- <link rel="stylesheet" href="main.css"> -->
         <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
         <title>Ranking</title>
     </head>
@@ -12,10 +13,10 @@
         <div id="contenedor"> 
             <div id="menu"> 
                 <ul>
-                    <li id="chambeando"> <img class="icono" src="assets/chambeando.png"> Chambeando</li>
-                    <li id="ranking"> <img class="icono" src="assets/ranking.png"> Ranking</li>
-                    <li id="tienda"> <img class="icono" src="assets/tienda.png"> Tienda</li>
-                    <li id="perfil"> <img class="icono" src="assets/perfil.png"> Perfil</li>
+                    <li id="chambeando"> <a href="niveles.html"> <img class="icono" src="assets/chambeando.png"> Chambeando  </a> </li>
+                    <li id="ranking" class="seleccionado"> <img class="icono" src="assets/ranking.png"> Ranking</li>
+                    <li id="tienda"> <a href="tienda.html"> <img class="icono" src="assets/tienda.png"> Tienda </a> </li>
+                    <li id="perfil"> <a href="perfil.html"> <img class="icono" src="assets/perfil.png"> Perfil </a> </li>
                 </ul>
                 <h2>Pythoneers</h2>
             </div>
@@ -23,15 +24,15 @@
                 <div id="info">
                     <ul>
                         <li> <img class="icono"  id="vidas" src="assets/vidas.png"> </li>
-                        <li id='vidas'>5</li>
+                        <li id='vidas_info'>6</li>
                         <li> <img class="icono" id="racha" src="assets/racha.png"> </li>
-                        <li id ='racha'>10</li>
+                        <li id ='racha_info'>10</li>
                         <li> <img class="icono" id="posicion" src="assets/posicion.png"> </li>
-                        <li id ='posicion'>1</li>
+                        <li id ='posicion_info'>1</li>
                         <li> <img class="icono" id="monedas" src="assets/monedas.png"> </li>
-                        <li id ='monedas'>100</li>
-                        <li> <img class="icono" id="gemas" src="assets/gemas.png"> </li>
-                        <li id ='puntaje'>100</li>
+                        <li id ='monedas_info'>100</li>
+                        <li> <img class="icono" id="gemas" src="assets/estrella.png"> </li>
+                        <li id ='puntaje_info'>100</li>
                     </ul>
                 </div>
                 <!-- <img src="https://as1.ftcdn.net/jpg/04/52/82/90/1000_F_452829077_JU5RhSmKQHYSi4mPpMaPIZweDiuIessf.jpg"> -->
@@ -78,5 +79,6 @@
                 </table>
             </div>
         </div>
+        <script src="menu_stats.js"></script>
     </body>
 </html>

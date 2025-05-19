@@ -35,7 +35,7 @@ function desbloqueaNivel(nivel_actual) {
                     img.src = 'assets/nivel_facil.png';
                 }
             }
-            nivel.disabled = false; 
+            // nivel.disabled = false; 
             nivel.classList.remove('bloqueado');
             
         } else {
@@ -43,7 +43,7 @@ function desbloqueaNivel(nivel_actual) {
                 if (img) {
                     img.src = 'assets/nivel_bloqueado.png';
                 }
-            nivel.disabled = true; 
+            // nivel.disabled = true; 
             nivel.classList.add('bloqueado');
         }
     }

@@ -115,7 +115,7 @@ h2 {
 
 table {
     margin-top: 50px;
-
+    margin-left: 20px;
 }
 
 th, td {
@@ -147,3 +147,13 @@ img.perfil {
 .podio {
     max-width: 70px;
 }
+
+/* .seleccionado {
+    background-color: rgb(6, 161, 239);
+    border-radius: 10px;
+}
+
+.seleccionado:hover {
+    background-color: rgb(6, 161, 239);
+    border-radius: 10px;
+} */

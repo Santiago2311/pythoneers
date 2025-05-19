@@ -86,6 +86,10 @@ td span {
     font-size: 19px;
 }
 
+#tienda_container {
+    margin-top: 20px;
+}
+
 /* #contenedor {
     display: grid;
     grid-template-columns: 200px 1fr;

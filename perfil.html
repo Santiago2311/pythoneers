@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="style_perfil.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="menu_stats.css">
+    <link rel="stylesheet" href="perfil.css">
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     <title>Perfil</title>
 </head>
@@ -9,53 +11,120 @@
     <div id="contenedor"> 
         <div id="menu"> 
             <ul>
-                <li id="chambeando"> <img class="icono" src="assets/chambeando.png"> Chambeando</li>
-                <li id="ranking"> <img class="icono" src="assets/ranking.png"> Ranking</li>
-                <li id="logros"> <img class="icono" src="assets/logros.png"> Logros</li>
-                <li id="tienda"> <img class="icono" src="assets/tienda.png"> Tienda</li>
-                <li id="perfil"> <img class="icono" src="assets/perfil.png"> Perfil</li>
+                <li id="chambeando"> <a href="niveles.html"> <img class="icono" src="assets/chambeando.png"> Chambeando </a> </li>
+                <li id="ranking"> <a href="ranking.html"> <img class="icono" src="assets/ranking.png"> Ranking </a> </li>
+                <li id="tienda"> <a href="tienda.html"> <img class="icono" src="assets/tienda.png"> Tienda </a> </li>
+                <li id="perfil" class="seleccionado"> <img class="icono" src="assets/perfil.png"> Perfil</li>
             </ul>
-            <h2>Pythoneers</h2>
+            <h2 id="nombre_juego"> Pythoneers</h2>
         </div>
         
         <div id="main"> 
             <div id="info">
                 <ul>
                     <li> <img class="icono" id="vidas" src="assets/vidas.png"> </li>
-                    <li id='vidas'>5</li>
+                    <li id='vidas_info'>5</li>
                     <li> <img class="icono" id="racha" src="assets/racha.png"> </li>
-                    <li id ='racha'>10</li>
+                    <li id ='racha_info'>10</li>
                     <li> <img class="icono" id="posicion" src="assets/posicion.png"> </li>
-                    <li id ='posicion'>1</li>
+                    <li id ='posicion_info'>1</li>
                     <li> <img class="icono" id="monedas" src="assets/monedas.png"> </li>
-                    <li id ='monedas'>100</li>
-                    <li> <img class="icono" id="gemas" src="assets/gemas.png"> </li>
-                    <li id ='puntaje'>100</li>
+                    <li id ='monedas_info'>100</li>
+                    <li> <img class="icono" id="estrellas" src="assets/estrella.png"> </li>
+                    <li id ='puntaje_info'>100</li>
                 </ul>
             </div>
-            <div id="perfil-container">
-                <img id="foto-perfil" src="https://thumbs.dreamstime.com/b/fuera-de-servicio-senal-se%C3%B1al-signo-con-tri%C3%A1ngulo-amarillo-y-exclamaci%C3%B3n-banner-215800294.jpg">
-                <div id="perfil-info">
-                    <h1>Juan Pedro McLovin Smith</h1><br>              
-                    <h3>A42090210</h3><br>
-                    <h1>Progreso (70%)</h1>
-                    <div id="barra-progreso">
-                        <div id="progreso"></div>
+            <div id="principal">
+                <div id="perfil-container">
+                    <img id="foto_perfil" src="assets/usuario.png">
+                    <div id="perfil_info">
+                        <h1 id="usuario_container">Juan Pedro McLovin Smith</h1>              
+                        <h2 id=correo>A42090210@tec.mx</h2>
+                        <br>
+                        <h1 id="progreso_titulo">Mi progreso</h1>
+                        <div id="progreso"> 
+                            <div id="barra_progreso">
+                                <div id="progreso_completado"></div>
+                            </div>
+                            <h1>70%</h1> 
+                        </div>
                     </div>
                 </div>
-            </div> 
-            <h1 id="titulo">Logros</h1> 
-            <table class="tabla-escudos">
-                <tr>
-                    <td><img src="assets/escudo.png" class="escudo"></td>
-                    <td><img src="assets/escudo.png" class="escudo"></td>
-                    <td><img src="assets/escudo.png" class="escudo"></td>
-                    <td><img src="assets/escudo.png" class="escudo"></td>
-                    <td><img src="assets/escudo.png" class="escudo"></td>
-                    <td><img src="assets/escudo.png" class="escudo"></td>
-                </tr>
-            </table>
+                <div id="logros"> 
+                    <h1 id="titulo">Mis logros</h1> 
+                    <div id="lista_logros">
+                        <div id="logros_nivel" class="col_logros">
+                            <img src="assets/nivel_desbloqueado.png" class="logro">
+                            <p> 1 nivel </p>
+                            <img src="assets/nivel_desbloqueado.png" class="logro">
+                            <p> 5 niveles </p>
+                            <img src="assets/nivel_desbloqueado.png" class="logro">
+                            <p> 10 niveles </p>
+                            <img src="assets/nivel_desbloqueado.png" class="logro">
+                            <p> 15 niveles </p>
+                            <img src="assets/nivel_desbloqueado.png" class="logro">
+                            <p> 20 niveles </p>
+                            <img src="assets/nivel_desbloqueado.png" class="logro">
+                            <p> Todos los niveles </p>
+                        </div>
+                        <div id="logros_racha" class="col_logros">
+                            <img src="assets/racha_desbloqueado.png" class="logro">
+                            <p> 5 dias </p>
+                            <img src="assets/racha_desbloqueado.png" class="logro">
+                            <p> 7 dias </p>
+                            <img src="assets/racha_desbloqueado.png" class="logro">
+                            <p> 10 dias </p>
+                            <img src="assets/racha_desbloqueado.png" class="logro">
+                            <p> 15 dias </p>
+                            <img src="assets/racha_desbloqueado.png" class="logro">
+                            <p> 20 dias </p>
+                            <img src="assets/racha_desbloqueado.png" class="logro">
+                            <p> 25 dias </p>
+                            <img src="assets/racha_desbloqueado.png" class="logro">
+                            <p> 30 dias </p>
+                        </div>
+                        <div id="logros_tienda" class="col_logros">
+                            <img src="assets/tienda_desbloqueado.png" class="logro">
+                            <p> 25% de tienda </p>
+                            <img src="assets/tienda_desbloqueado.png" class="logro">
+                            <p> 50% de tienda </p>
+                            <img src="assets/tienda_desbloqueado.png" class="logro">
+                            <p> 75% de tienda </p>
+                            <img src="assets/tienda_desbloqueado.png" class="logro">
+                            <p> 100% </dp>
+                        </div>
+                        <div id="logros_perfeccion" class="col_logros">
+                            <img src="assets/perfeccion_desbloqueado.png" class="logro">
+                            <p> 1 leccion perfecta </p>
+                            <img src="assets/perfeccion_desbloqueado.png" class="logro">
+                            <p> 5 lecciones perfectas </p>
+                            <img src="assets/perfeccion_desbloqueado.png" class="logro">
+                            <p> 10 lecciones perfectas </p>
+                            <img src="assets/perfeccion_desbloqueado.png" class="logro">
+                            <p> 20 lecciones perfectas </p>
+                            <img src="assets/perfeccion_desbloqueado.png" class="logro">
+                            <p> 30 lecciones perfectas </p>
+                            <img src="assets/perfeccion_desbloqueado.png" class="logro">
+                            <p> 50 lecciones perfectas </p>
+                            <img src="assets/perfeccion_desbloqueado.png" class="logro">
+                            <p> 70 lecciones perfectas </p>
+                        </div>
+                        <div id="logros_puntos" class="col_logros">
+                            <img src="assets/puntaje_desbloqueado.png" class="logro">
+                            <p> 100 estrellas </p>
+                            <img src="assets/puntaje_desbloqueado.png" class="logro">
+                            <p> 500 estrellas </p>
+                            <img src="assets/puntaje_desbloqueado.png" class="logro">
+                            <p> 1000 estrellas </p>
+                            <img src="assets/puntaje_desbloqueado.png" class="logro">
+                            <p> 2000 estrellas </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="perfil.js"></script>
+    <script src="menu_stats.js"></script>
 </body>
 </html>

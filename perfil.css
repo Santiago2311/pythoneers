@@ -1,99 +1,100 @@
-#contenedor {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    padding: 10px;
+.dynapuff {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
 }
 
 body {
     font-family: "DynaPuff", system-ui, sans-serif;
     background-color: rgb(6, 24, 38);
     color: white;
+    padding-top: 0px;
+    /* margin: 0px; */
+    font-size: 22px;
 }
 
-#menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+#principal {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    /* width: 80% !important; */
+    margin: 50px auto;
 }
 
-#menu li {
+#perfil-container {
+    display: flex;
+    width: 100%;
+}
+
+#foto_perfil {
+    width: 40%;
+    height: auto;
     margin: 10px;
 }
 
-li#chambeando {
-    position: fixed;
-    top: 10px;
+#perfil_info {
+    margin: 10px;
 }
 
-li#ranking {
-    position: fixed;
-    top: 70px;
+#progreso_titulo {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
 }
 
-li#logros {
-    position: fixed;
-    top: 140px;
+#progreso {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
 }
 
-li#tienda {
-    position: fixed;
-    top: 210px;
+#barra_progreso {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
 }
 
-li#perfil {
-    position: fixed;
-    top: 280px;
+#progreso_completado {
+    height: 100%;
+    background-color: rgb(186, 131, 222);
+    width: 70%; /* Este valor lo puedes actualizar dinámicamente */
+    transition: width 0.3s ease;
 }
 
-#menu ul li img {
-    vertical-align: middle;
-    margin-right: 8px;
+#progreso h1 {
+    margin: 10px;
 }
 
-h2 {
-    position: fixed;
-    bottom: 0;
+#titulo {
+    margin-bottom: 0px;
 }
 
-#main {
+#lista_logros {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr;
-    gap: 10px;
-    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin-top: 0px;
+    gap: 0px;
+    font-size: 20px;
 }
 
-#info {
-    position: fixed;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    z-index: 10;
-    right: 15px;
-}
-
-#info ul {
-    display: flex;
-    gap: 5px;
-    list-style-type: none;
-    margin: 0px;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-}
-
-#info ul li{
+.logro {
+    width: 80%;
     margin: 0px;
 }
 
-#info ul img{
-    margin-left: 15px;
+.col_logros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.icono {
-    width: 30px;
-    height: 30px;
+.col_logros p {
     margin: 0px;
 }
