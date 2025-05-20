@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -50,8 +51,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 1100 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -552,5 +557,6 @@
     </div>
 
     <script src="menu_stats.js"></script>
+    <script src="comprar.js"></script>
 </body>
 </html>

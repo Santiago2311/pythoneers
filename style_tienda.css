@@ -195,3 +195,7 @@ button.comprar, button.usar{
     border-color:rgb(158, 88, 205);
 
 }
+
+#alerta_fondos_insuficientes {
+    font-size: 15px;
+}
