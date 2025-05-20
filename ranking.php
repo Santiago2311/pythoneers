@@ -28,6 +28,19 @@ if ($result && $result->num_rows > 0) {
     }
 }
 
+$activo = 1;
+$stmt = $conn->prepare("SELECT * FROM inventario NATURAL JOIN usuario WHERE activo = ? ORDER BY puntaje DESC;");
+$stmt->bind_param("i", $activo);
+$stmt->execute();
+$result = $stmt->get_result(); 
+
+$accesorios = [];
+if ($result && $result->num_rows > 0) {
+    while ($fila = $result->fetch_assoc()) {
+        $usuarios[] = $fila; // Agrega cada fila al arreglo
+    }
+}
+
 // Cerrar conexión
 $conn->close();
 

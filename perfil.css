@@ -29,10 +29,53 @@ body {
     width: 100%;
 }
 
-#foto_perfil {
+#avatar {
+    position: relative;
     width: 40%;
     height: auto;
     margin: 10px;
+}
+
+#foto_perfil {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    z-index: 1;
+}
+
+.accesorio {
+    position: absolute;
+    z-index: 5;
+    width: 40%;
+    height: auto;
+}
+
+#cabeza {
+    top: -5%;
+    left: 34%;
+}
+
+#lentes {
+    top: 19%;
+    left: 31%;
+    width: 45%;
+}
+
+#cuello {
+    top: 61%;
+    left: 42%;
+    width: 25%;
+}
+
+#bolso {
+    top: 75%;
+    left: 15%;
+    width: 25%;
+}
+
+.oculto {
+    display: none;
 }
 
 #perfil_info {
@@ -97,4 +140,8 @@ body {
 
 .col_logros p {
     margin: 0px;
+}
+
+.oculto {
+    display: none;
 }
