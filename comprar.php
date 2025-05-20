@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 
 $correo = $_SESSION['correo'];
 
-$nombre_producto = $_POST['nombre_producto'] ?? null;
+$nombre_producto = $_SESSION['nombre_producto'] ?? null;
 
 // var_dump($_SESSION); // Verifica la sesión
 // var_dump($_POST);    // Verifica los datos del formulario
@@ -45,6 +45,8 @@ $stmt->close();
 if ($monedas < $precio) {
     echo json_encode(['compra_exitosa' => 0]);
 } else {
+    // var_dump("El problema nunca fue economico");
+    // exit();
     $stmt = $conn->prepare("INSERT INTO inventario (nombre_producto, correo, activo) VALUES (?, ?, 0);");
     $stmt->bind_param("ss", $nombre_producto, $correo);
     $stmt->execute();
@@ -58,7 +60,7 @@ if ($monedas < $precio) {
 
     echo json_encode([
         'compra_exitosa' => 1,
-        'nombre_producto'=> $nombre_producto]);
+        'nombre_producto' => $nombre_producto]);
 }
 
 $conn->close();

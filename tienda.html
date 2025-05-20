@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="menu_stats.css">
-    <link rel="stylesheet" href="style_tienda.css">
+    <link rel="stylesheet" href="tienda.css">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
     <title>Tienda</title>
@@ -51,11 +51,11 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 1100 <img src="assets/monedas.png"> </span>
-                                <form method="POST" action="tienda.php">
+                                <span class="precio">898<img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php" data-comprar="1">
                                     <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
                                     <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
-                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                    <p class="alerta oculto" id="alerta_sombrero_vaquero"> Ponte a chambear mejor </p>
                                 </form>
                             </div>
                         </td>
@@ -69,8 +69,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 1999 <img src="assets/monedas.png"> </span>
-                                <button class="usar"> Usar </button>
+                                <span class="precio">430<img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php" data-comprar="1">
+                                    <input type="hidden" name="nombre_producto" value="gorro_de_fiesta">
+                                    <button id="gorro_de_fiesta" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -83,8 +87,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 879 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php" data-comprar="1">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_mexicano">
+                                    <button id="sombrero_mexicano" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_sombrero_mexicano"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -97,8 +105,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 1378 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php" data-comprar="1">
+                                    <input type="hidden" name="nombre_producto" value="penacho_azteca">
+                                    <button id="penacho_azteca" type="submit" class="comprar" data-comprar="1">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -111,8 +123,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 350 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php" data-comprar="1">
+                                    <input type="hidden" name="nombre_producto" value="casco_militar">
+                                    <button id="casco_militar" type="submit" class="comprar" data-comprar="1">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -126,8 +142,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 832 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="button" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -140,8 +160,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 632 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -153,8 +177,12 @@
                             <span>Es lo que te pones en la cabeza cuando te gradúas, por si lo sientes muy lejos o imposible, manifiéstalo.
                                 <td>
                                     <div class="accion"> 
-                                        <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                        <button class="comprar"> Comprar </button>
+                                        <span class="precio"> 704 <img src="assets/monedas.png"> </span>
+                                        <form method="POST" action="tienda.php">
+                                            <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                            <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                            <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                        </form>
                                     </div>
                                 </td>
                     </tr>
@@ -167,8 +195,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 699 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -181,8 +213,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 1002 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -195,8 +231,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 1065 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -209,8 +249,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 346 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -223,8 +267,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 619 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -241,8 +289,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 991 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -255,8 +307,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 1648 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -270,8 +326,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 444 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -284,8 +344,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 803 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -298,8 +362,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 784 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -313,8 +381,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 1854 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -331,8 +403,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 722 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -345,8 +421,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 604 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>                    
@@ -359,8 +439,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 499 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -373,8 +457,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 768 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>                    
@@ -387,8 +475,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 3057 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -401,8 +493,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 2892 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -415,8 +511,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 3465 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -429,8 +529,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 2759 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -443,8 +547,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 302 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -457,8 +565,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 385 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -471,8 +583,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 436 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -489,8 +605,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 2008 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -503,8 +623,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 1786 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>                
@@ -517,8 +641,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 2401 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -531,8 +659,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 3227 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -545,8 +677,12 @@
                         </td>
                         <td>
                             <div class="accion"> 
-                                <span class="precio"> 2350 <img src="assets/monedas.png"> </span>
-                                <button class="comprar"> Comprar </button>
+                                <span class="precio"> 3331 <img src="assets/monedas.png"> </span>
+                                <form method="POST" action="tienda.php">
+                                    <input type="hidden" name="nombre_producto" value="sombrero_vaquero">
+                                    <button id="sombrero_vaquero" type="submit" class="comprar">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_fondos_insuficientes"> Ponte a chambear mejor </p>
+                                </form>
                             </div>
                         </td>
                     </tr>
@@ -556,7 +692,8 @@
         </div>
     </div>
 
-    <script src="menu_stats.js"></script>
     <script src="comprar.js"></script>
+    <script src="menu_stats.js"></script>
+    <script src="botones_tienda.js"></script>
 </body>
 </html>
