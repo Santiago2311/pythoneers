@@ -137,11 +137,29 @@ table td:nth-child(2) {
     width: 10%; 
 } */
 
-img.perfil {
+.avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.perfil {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 1;
     width: 200px;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+#cabeza {
+    position: absolute;
+    width: 60px;
+    top:0%;
+    left:90%;
+    z-index: 15;
 }
 
 .podio {
