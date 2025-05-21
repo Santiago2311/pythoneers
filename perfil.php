@@ -23,11 +23,59 @@ $stmt->execute();
 $stmt->bind_result($nombre, $apellidos);
 $stmt->fetch();
 $stmt->close();
+
+$activo = 1;
+$productos = [];
+
+$categorias = ['cabeza', 'cuello', 'lentes', 'bolso'];
+
+foreach ($categorias as $categoria) {
+    $stmt = $conn->prepare("SELECT nombre_producto FROM inventario NATURAL JOIN item WHERE correo = ? AND activo = ? AND categoria= ?");
+    $stmt->bind_param("sis", $correo, $activo, $categoria); // el último es int, no string
+    $stmt->execute();
+    $stmt->bind_result($nombre_producto);
+
+    $found = false;
+    
+    if ($stmt->fetch()) {
+        $productos[] = [
+            'categoria' => $categoria,
+            'nombre_producto' => $nombre_producto
+        ];
+        $found = true;
+    }
+
+    if (!$found) {
+        $productos[] = [
+            'categoria' => $categoria,
+            'nombre_producto' => 'vacio'
+        ];
+    }
+
+    $stmt->close();
+}
+
+$stmt = $conn->prepare("SELECT ult_leccion FROM usuario WHERE correo = ?");
+$stmt->bind_param("s", $correo);
+$stmt->execute();
+$stmt->bind_result($ult_leccion);
+$stmt->fetch();
+$stmt->close();
+
+if (is_null($ult_leccion)) {
+    $ult_leccion = 0;
+}
+
+$progreso = ($ult_leccion * 100) / 96;
+
+
 $conn->close();
 
 echo json_encode([
     'nombre' => $nombre,
     'apellidos' => $apellidos,
     'correo' => $correo,
+    'productos' => $productos,
+    'progreso' => $progreso
 ]);
 ?>
