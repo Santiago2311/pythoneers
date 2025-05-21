@@ -27,7 +27,7 @@ $stmt->close();
 $activo = 1;
 $productos = [];
 
-$categorias = ['cabeza', 'cuello', 'lentes', 'bolso'];
+$categorias = ['cabeza', 'cuello', 'lentes', 'bolsos'];
 
 foreach ($categorias as $categoria) {
     $stmt = $conn->prepare("SELECT nombre_producto FROM inventario NATURAL JOIN item WHERE correo = ? AND activo = ? AND categoria= ?");
