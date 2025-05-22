@@ -1,0 +1,45 @@
+<<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style_pregunta.css">
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="top-bar">
+                <div id="cerrar">X</div>
+                <div id="barra-progreso">
+                    <div id="progreso"></div>
+                </div>
+                <div id="estado">
+                    <ul>
+                        <li><img id="icono"src="assets/reloj.png"></li>
+                        <li id="tiempo">5:00</li>
+                        <li> </li>
+                        <li><img id="icono"src="assets/vidas.png"></li>
+                        <li id="vidas">5</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div id="main">
+                <img id="serpiente" src="assets/serpientepregunta.jpeg">
+                <div id="pregunta">
+                    <p>¿Cuál sería la salida del siguiente código si n es 3? <br>
+                        def suma(n): <br>
+                            resultado = 0 <br>
+                            for i in range(n): <br>
+                                resultado += i <br>
+                            return resultado <br>
+                        print(suma(3))</p>
+                </div>
+            </div>
+    
+            <div id="opciones_vf">
+                <button class="option">Verdadero</button>
+                <button class="option">Falso</button>
+            </div>
+        </div>
+    </body>
+</html>
