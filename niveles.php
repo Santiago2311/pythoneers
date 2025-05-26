@@ -35,7 +35,19 @@ if ($ult_leccion == NULL) {
     $stmt->close();
 }
 
+if ($ult_leccion % 4 == 0 && $ult_leccion != NULL) {
+    $nivel_actual += 1;
+}
+
+if ($ult_leccion == NULL) {
+    $leccion_actual = 1;
+} else {
+    $leccion_actual = $ult_leccion + 1;
+}
+
 $conn->close();
 
-echo json_encode(['nivel_actual' => $nivel_actual]);
+echo json_encode([
+    'nivel_actual' => $nivel_actual,
+    'leccion_actual' => $leccion_actual]);
 ?>

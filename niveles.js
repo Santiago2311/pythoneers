@@ -37,7 +37,7 @@ function desbloqueaNivel(nivel_actual) {
             }
             // nivel.disabled = false; 
             nivel.classList.remove('bloqueado');
-            nivel.onclick = () => location.href = 'inicio_leccion.html';
+            // nivel.onclick = () => location.href = 'inicio_leccion.html';
             
         } else {
             const img = nivel.querySelector('img.manzana');
