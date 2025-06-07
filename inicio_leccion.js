@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log('URL actual:', window.location.href);
     const params = new URLSearchParams(window.location.search);
     const leccionId = params.get('leccion_id');
+    const nivelId = params.get('nivel_num');
     console.log(`Valor de leccion_id: ${leccionId}`);
 
     // Cambia el texto del título
@@ -14,8 +15,19 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    setTimeout(() => {
-        // Cambia esta URL por la que necesites
-        window.location.href = 'pregunta_4opciones.html';
-    }, 1000);
+    fetch('generar_preguntas.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ nivel_num: nivelId })
+    })
+    .then(response => response.text())
+    .then(data => {
+        console.log('Respuesta del servidor:', data);
+        console.log('Estoy hasta mi madre');
+        setTimeout(() => {
+            window.location.href = 'pregunta.html';
+        }, 1000);
+    })
 });

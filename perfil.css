@@ -106,7 +106,7 @@ body {
 #progreso_completado {
     height: 100%;
     background-color: rgb(186, 131, 222);
-    width: 70%; /* Este valor lo puedes actualizar dinámicamente */
+    width: 25%; /* Este valor lo puedes actualizar dinámicamente */
     transition: width 0.3s ease;
 }
 

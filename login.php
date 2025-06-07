@@ -32,10 +32,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 header("Location: niveles.html");
             } else {
-                echo "<h1>Contraseña incorrecta</h1>";
+                header("Location: login.html?error=contrasena");
+                exit();
             }
         } else {
-            echo "<h1>Usuario incorrecto o inexistente</h1>";
+            header("Location: login.html?error=usuario");
+            exit();
         }
         $stmt->close();
         $conn->close();

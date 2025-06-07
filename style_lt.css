@@ -69,15 +69,15 @@ h2 {
     margin: 10px;
 }
 
-#monedas {
+#monedas_cuadro {
     background-color: rgb(252, 198, 6);
 }
 
-#calificacion {
+#calificacion_cuadro {
     background-color: rgb(6, 161, 239);
 }
 
-#puntos {
+#puntos_cuadro {
     background-color: rgb(186, 131, 222);
 }
 

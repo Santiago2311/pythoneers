@@ -66,7 +66,21 @@ if (is_null($ult_leccion)) {
     $ult_leccion = 0;
 }
 
-$progreso = ($ult_leccion * 100) / 96;
+$progreso = floor(($ult_leccion * 100) / 96);
+
+
+//*TODO: Checar que logros estan disponibles
+$stmt = $conn->prepare("SELECT id_logro, categoria FROM usuario_logro NATURAL JOIN logro WHERE correo = ?;");
+$stmt->bind_param("s", $correo);
+$stmt->execute();
+$stmt->bind_result($id_logro, $categoria);
+$id_logros = []; 
+
+while ($stmt->fetch()) {
+    $id_logros[intval($id_logro)] = $categoria;
+}
+
+$stmt->close();
 
 
 $conn->close();
@@ -76,6 +90,7 @@ echo json_encode([
     'apellidos' => $apellidos,
     'correo' => $correo,
     'productos' => $productos,
-    'progreso' => $progreso
+    'progreso' => $progreso,
+    'logros_conseguidos' => $id_logros
 ]);
 ?>

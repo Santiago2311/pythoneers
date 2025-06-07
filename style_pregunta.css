@@ -134,3 +134,49 @@ input {
     width:100%;
     height:60px;
 }
+
+.correcto {
+    background: rgb(0, 255, 0);
+    color: white
+}
+
+.incorrecto {
+    background-color: rgb(240, 24, 5);
+    color: white
+}
+
+#perdio {
+    position: fixed; /* para que esté por encima y centrado en la ventana */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* para centrarlo exactamente */
+    z-index: 9999; /* para que esté encima de los demás */
+    background-color: white; /* opcional: para que el fondo sea visible */
+    border: 2px solid black; /* opcional: para distinguirlo */
+    padding: 20px; /* opcional: para espacio interior */
+    text-align: center; /* opcional: para centrar el texto */
+    border-radius: 10px;
+    display: block;
+}
+
+#perdio h1{
+    color: rgb(240, 24, 5);
+}
+
+button {
+    color: white;
+    background-color: rgb(252, 194, 6);
+    border-color: rgba(222, 149, 2, 0.791);
+    /* width: 100%; */
+    font-family: "DynaPuff", system-ui;
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+} 
+
+#btn-enviar{
+    display: block;
+    margin-left: auto;
+}

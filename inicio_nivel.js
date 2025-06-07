@@ -9,9 +9,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 console.log('Datos recibidos:', data);
                 console.log('Lección ID:', data.leccion_actual);
                 if (data.nivel_actual > nivelNum) {
-                    window.location.href = `inicio_leccion.html?leccion_id=leccion_practica`;
+                    window.location.href = `inicio_leccion.html?leccion_id=leccion_practica&nivel_num=${nivelNum}`;
                 } else {
-                    window.location.href = `inicio_leccion.html?leccion_id=${leccionId}`;
+                    window.location.href = `inicio_leccion.html?leccion_id=${leccionId}&nivel_num=${nivelNum}`;
                 }
     });
         });
