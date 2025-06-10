@@ -47,13 +47,14 @@ body {
 .accesorio {
     position: absolute;
     z-index: 5;
-    width: 40%;
+    /* width: 40%; */
     height: auto;
 }
 
 #cabeza {
-    top: -5%;
-    left: 34%;
+    width:160px;
+    top: 2px;
+    left: 170px;
 }
 
 #lentes {

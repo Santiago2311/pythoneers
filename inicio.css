@@ -27,6 +27,29 @@ button {
     transition: 0.3s ease;
 }
 
+#mensajito {
+    z-index: 15;
+    position: absolute;
+    top: 70px;
+    left: 220px;
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 20px;
+    font-size: large;
+    border-radius: 50px;
+}
+
+#triangulito {
+    padding: 22px;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    top: 196px;
+    left: 316px;
+}
+
 
 #iniciar-sesion {
     background-color: transparent;

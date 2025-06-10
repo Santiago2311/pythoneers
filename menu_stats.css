@@ -77,6 +77,10 @@ html {
     bottom: 0;
 }
 
+#nombre_juego:hover {
+    color: rgb(252, 194, 6);
+}
+
 #menu ul {
     list-style-type: none;
     padding: 0px;

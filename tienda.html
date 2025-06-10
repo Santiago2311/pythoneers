@@ -18,7 +18,7 @@
                 <li id="tienda" class="seleccionado"> <img class="icono" src="assets/tienda.png"> Tienda</li>
                 <li id="perfil"> <a href="perfil.html"> <img class="icono" src="assets/perfil.png"> Perfil </a> </li>
             </ul>
-            <h2 id="nombre_juego">Pythoneers</h2>
+            <a href="about_us.html"><h2 id="nombre_juego">Pythoneers</h2></a>
         </div>
         <div id="main"> 
             <div id="info">
@@ -143,7 +143,7 @@
                                 <span class="precio"> 832 <img src="assets/monedas.png"> </span>
                                 <form method="POST" action="tienda.php" data-comprar="1">
                                     <input type="hidden" name="nombre_producto" value="gorro_navideño">
-                                    <button id="gorro_navideño" type="button" class="comprar" data-comprar="1">Comprar</button>
+                                    <button id="gorro_navideño" type="submit" class="comprar" data-comprar="1">Comprar</button>
                                     <p class="alerta oculto" id="alerta_gorro_navideño"> Ponte a chambear mejor </p>
                                 </form>
                             </div>
@@ -230,7 +230,7 @@
                         <td>
                             <div class="accion"> 
                                 <span class="precio"> 1065 <img src="assets/monedas.png"> </span>
-                                <form method="POST" action="tienda.php">
+                                <form method="POST" action="tienda.php" data-comprar="1">
                                     <input type="hidden" name="nombre_producto" value="sombrero_halloweenesco">
                                     <button id="sombrero_halloweenesco" type="submit" class="comprar" data-comprar="1">Comprar</button>
                                     <p class="alerta oculto" id="alerta_sombrero_halloweenesco"> Ponte a chambear mejor </p>
@@ -361,8 +361,8 @@
                         <td>
                             <div class="accion"> 
                                 <span class="precio"> 784 <img src="assets/monedas.png"> </span>
-                                <form method="POST" action="tienda.php">
-                                    <input type="hidden" name="nombre_producto" value="lentes_de_estrella" data-comprar="1">
+                                <form method="POST" action="tienda.php" data-comprar="1">
+                                    <input type="hidden" name="nombre_producto" value="lentes_de_estrella">
                                     <button id="lentes_de_estrella" type="submit" class="comprar" data-comprar="1">Comprar</button>
                                     <p class="alerta oculto" id="alerta_lentes_de_estrella"> Ponte a chambear mejor </p>
                                 </form>
@@ -447,7 +447,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="assets/moño_rojo.png" class="producto"></td>
+                        <td><img src="assets/moño_rosado.png" class="producto"></td>
                         <td>
                             <strong>Moño rosado</strong>
                             <br><br>
@@ -457,9 +457,9 @@
                             <div class="accion"> 
                                 <span class="precio"> 768 <img src="assets/monedas.png"> </span>
                                 <form method="POST" action="tienda.php" data-comprar="1">
-                                    <input type="hidden" name="nombre_producto" value="moño_rojo">
-                                    <button id="moño_rojo" type="submit" class="comprar" data-comprar="1">Comprar</button>
-                                    <p class="alerta oculto" id="alerta_moño_rojo"> Ponte a chambear mejor </p>
+                                    <input type="hidden" name="nombre_producto" value="moño_rosado">
+                                    <button id="moño_rosado" type="submit" class="comprar" data-comprar="1">Comprar</button>
+                                    <p class="alerta oculto" id="alerta_moño_rosado"> Ponte a chambear mejor </p>
                                 </form>
                             </div>
                         </td>

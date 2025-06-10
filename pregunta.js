@@ -57,7 +57,7 @@ function mostrarPregunta() {
     });
 
     const img_serpiente = document.createElement("img");
-    img_serpiente.src = "assets/serpientepregunta.jpeg";
+    img_serpiente.src = "assets/serpientepregunta.png";
     img_serpiente.id = "serpiente";
     main.appendChild(img_serpiente);
     const pregunta_div = document.createElement("div");
@@ -216,7 +216,7 @@ function verificarRespuesta(respuesta_usuario, opcion_id) {
 function mostrarMensajePerdiste(contenedor) {
     const perdio = document.createElement("div");
     perdio.innerHTML = `<div id="perdio">
-    <img src="https://i.pinimg.com/736x/2b/de/9a/2bde9a0fe36ee87e40dd39e7419ef0ce.jpg">
+    <img src="assets/serpienteperdiste.png">
     <h1> Perdiste </h1>
     <h3> Insertar mensaje gracioso pero que no te haga sentir mal</h3>
 </div>`;
