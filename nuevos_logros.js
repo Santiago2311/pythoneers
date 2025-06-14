@@ -4,8 +4,10 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(response => response.json())
     .then(data => {
         console.log(data.logro_nivel_conseguido);
+        document.getElementById('logros').innerHTML = ""; // Limpiar logros previo
         if (data.logro_nivel_conseguido > 0) {
             const div_logro = document.createElement("div");
+            div_logro.id = "logro";
             const img_logro = document.createElement("img");
             img_logro.src = "assets/logro_niveles_desbloqueado.png";
             const texto_logro = document.createElement("p");
@@ -24,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (data.logro_racha_conseguido > 0) {
             const div_logro = document.createElement("div");
+            div_logro.id = "logro";
             const img_logro = document.createElement("img");
             img_logro.src = "assets/logro_racha_desbloqueado.png";
             const texto_logro = document.createElement("p");
@@ -40,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (data.logro_tienda_conseguido > 0) {
             const div_logro = document.createElement("div");
+            div_logro.id = "logro";
             const img_logro = document.createElement("img");
             img_logro.src = "assets/logro_tienda_desbloqueado.png";
             const texto_logro = document.createElement("p");
@@ -56,6 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (data.logro_lp_conseguido > 0) {
             const div_logro = document.createElement("div");
+            div_logro.id = "logro";
             const img_logro = document.createElement("img");
             img_logro.src = "assets/logro_lecciones_perfectas_desbloqueado.png";
             const texto_logro = document.createElement("p");
@@ -68,6 +73,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         if (data.logro_puntaje_conseguido > 0) {
             const div_logro = document.createElement("div");
+            div_logro.id = "logro";
             const img_logro = document.createElement("img");
             img_logro.src = "assets/logro_puntaje_desbloqueado.png";
             const texto_logro = document.createElement("p");

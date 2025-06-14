@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $puerto = 3307;
         $usuario_db = "TC2005B_602_4"; //
         $password_db = "pAssWd_894700";
-        $nombre_db = "R_602_4";
+        $nombre_db = "R_602_5";
 
         $conn = new mysqli($servidor, $usuario_db, $password_db, $nombre_db, $puerto);
         if ($conn->connect_error) {
