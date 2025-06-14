@@ -1,0 +1,64 @@
+.dynapuff {
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+}
+
+body{
+    background-color: rgb(6, 24, 38);
+    color: white;
+    font-family: "DynaPuff", system-ui;
+}
+
+#logros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+
+#logro {
+    width: 20%;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 1%;
+}
+
+#logro h2 {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+#logro img {
+    width: 100%;
+    height: auto;
+    /* margin: 5vw; */
+}
+
+#titulo {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+#btn {
+    color: white;
+    background-color: rgb(252, 194, 6);
+    border-color: rgba(222, 149, 2, 0.791);
+    /* width: 100%; */
+    font-family: "DynaPuff", system-ui;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 5rem auto;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    width: fit-content;
+    font-size: 2rem;
+
+}
