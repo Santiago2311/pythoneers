@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Configuración de la conexión a la base de datos a través del túnel SSH
     $servidor = "127.0.0.1";
-    $puerto = 3307;
+    //$puerto = 3307;
     $usuario_db = "TC2005B_602_4";
     $password_db = "pAssWd_894700";
     $nombre_db = "R_602_4";

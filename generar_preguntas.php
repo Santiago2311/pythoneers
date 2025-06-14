@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Esta parte se ejecuta cuando entras desde window.location.href
     if (isset($_SESSION['nivel_num'])) {
         $servidor = "127.0.0.1";
-        $puerto = 3307;
+        //$puerto = 3307;
         $usuario_db = "TC2005B_602_4";
         $password_db = "pAssWd_894700";
         $nombre_db = "R_602_4";
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // TODO: Aquí seria la conexión con la otra base de datos
         $servidor = "127.0.0.1";
-        $puerto = 3307;
+        //$puerto = 3307;
         $usuario_db = "TC2005B_602_4"; //
         $password_db = "pAssWd_894700";
         $nombre_db = "R_602_5";
